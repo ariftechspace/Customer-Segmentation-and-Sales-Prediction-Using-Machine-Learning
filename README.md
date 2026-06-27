@@ -10,6 +10,33 @@ This project was developed as part of my Data Science portfolio.
 
 ---
 
+<table align="center">
+<tr>
+<td align="center">
+<img src="figures/monthly_sales_trend.png" width="420"><br>
+<b>Monthly Sales Trend</b>
+</td>
+
+<td align="center">
+<img src="figures/top_categories.png" width="420"><br>
+<b>Top Categories</b>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<img src="figures/top_products.png" width="420"><br>
+<b>Top Products</b>
+</td>
+
+<td align="center">
+<img src="figures/top_customers.png" width="420"><br>
+<b>Top Customers</b>
+</td>
+</tr>
+</table>
+
+
 # Business Problem
 
 Retail businesses need to understand customer behavior and sales patterns to make better business decisions.
