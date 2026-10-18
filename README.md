@@ -6,7 +6,7 @@ This project is an end-to-end data science project that analyzes retail sales da
 
 The project focuses on understanding customer purchasing behavior, analyzing sales trends, segmenting customers, and predicting sales. It demonstrates the complete data science workflow from data cleaning to model building and evaluation.
 
-This project was developed as part of my Data Science portfolio.
+This project was developed as part of my data analytics portfolio.
 
 ---
 
@@ -55,7 +55,7 @@ The main objectives of this project are to:
 
 Dataset: Retail Store Sales Transactions
 
-The dataset contains more than 130,000 retail transactions with information such as:
+The dataset contains more than 131,706 retail transactions with information such as:
 
 * Date
 * Customer ID
@@ -85,7 +85,7 @@ The dataset contains more than 130,000 retail transactions with information such
 
 1. Data Loading
 2. Data Understanding
-3. Data Cleaning
+3. Data Preparation and Inspection
 4. Exploratory Data Analysis
 5. Feature Engineering
 6. Customer Segmentation using K-Means
@@ -126,9 +126,32 @@ Evaluation Metrics:
 
 ---
 
+# Results
+
+## Customer segments (K-Means, silhouette score 0.58)
+
+| Segment | Avg total spend | Avg purchases | Avg tenure (days) |
+|---|---|---|---|
+| Loyal high-value | 752.76 | 19.5 | 245 |
+| Regular mid-value | 123.45 | 5.5 | 178 |
+| Infrequent big-basket | 212.55 | 1.6 | 25 |
+| New low-spend | 27.35 | 1.5 | 14 |
+
+## Sales prediction (20% test set)
+
+| Model | MAE | RMSE | R² |
+|---|---|---|---|
+| Gradient Boosting | 7.19 | 15.59 | 0.333 |
+| Linear Regression | 6.67 | 15.98 | 0.299 |
+| Random Forest | 7.63 | 16.26 | 0.275 |
+
 # Key Findings
 
-* Customer purchasing behavior is different across customer groups.
-* Some product categories generate higher sales than others.
-* Customer segmentation helps identify different types of customers.
-* Machine learning models can predict sales and support business decisions.
+- Four customer groups with very different value: the loyal group spends about 28 times more than the new low-spend group (752.76 vs 27.35).
+- Gradient Boosting scored best on R² and RMSE; Linear Regression had the lowest MAE.
+- The models explain about a third of the variation in sales amount, so they are a baseline.
+
+# Limitations
+
+Predictions are made per line item, which is hard to forecast. 
+Future work: more features, or predicting monthly sales per category.
