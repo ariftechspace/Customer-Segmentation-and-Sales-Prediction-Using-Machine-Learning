@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is an end-to-end data science project that analyzes retail sales data using Python and machine learning.
+This project is an end to end data science project that analyzes retail sales data using Python and machine learning.
 
 The project focuses on understanding customer purchasing behavior, analyzing sales trends, segmenting customers, and predicting sales. It demonstrates the complete data science workflow from data cleaning to model building and evaluation.
 
